@@ -140,19 +140,13 @@
 | Было | Стало | 
 |------------|-----------------|
 |1 инстанс каждого сервиса|2+ инстанса за Load Balancer|
-
-```
-БЫЛО:                              СТАНЕТ:
-─────                              ───────
-1 инстанс каждого сервиса    →    2+ инстанса за Load Balancer
-1 БД (read+write)            →    Master + Read Replica
-Нет мониторинга              →    Prometheus + Grafana + Alertmanager
-Нет трейсинга                →    Jaeger + OpenTelemetry
-Нет централизованных логов   →    OpenSearch + Logstash/Fluent
-Нет кеширования              →    Redis Cluster
-RabbitMQ без DLQ             →    RabbitMQ + DLQ + retry policies
-Нет rate limiting            →    API Gateway с rate limiting
-```
+|1 БД (read+write)|Master + Read Replica|
+|Нет мониторинга|Prometheus + Grafana + Alertmanager|
+|Нет трейсинга|Jaeger + OpenTelemetry|
+|Нет централизованных логов|OpenSearch + Logstash/Fluent|
+|Нет кеширования|Redis Cluster|
+|RabbitMQ без DLQ|RabbitMQ + DLQ + retry policies|
+|Нет rate limiting|API Gateway с rate limiting|
 
 ### Компоненты целевой архитектуры:
 
