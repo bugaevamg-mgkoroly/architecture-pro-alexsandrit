@@ -176,39 +176,7 @@
 
 ### Диаграмма (схематично):
 
-```
-[Customer/API User]
-        │
-        ▼
-[API Gateway + Rate Limit]
-        │
-        ▼
-[Load Balancer]
-   ┌────┼────┐
-   ▼    ▼    ▼
-[Shop] [CRM] [MES] ──► [Redis Cache]
-   │    │    │
-   └────┼────┘
-        │
-        ▼
-[RabbitMQ + DLQ]
-        │
-        ▼
-[PostgreSQL Master] ◄──► [Read Replica]
-
-[Все компоненты] ──► [OpenTelemetry Collector]
-                            │
-              ┌─────────────┼─────────────┐
-              ▼             ▼             ▼
-         [Prometheus]   [Jaeger]    [OpenSearch]
-              │             │             │
-              └─────────────┼─────────────┘
-                            ▼
-                       [Grafana]
-                            │
-                            ▼
-                    [Alertmanager]
-```
+![alt text](<Диаграмма анализ.png>)
 
 ---
 
