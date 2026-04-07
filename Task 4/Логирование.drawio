@@ -1,0 +1,71 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="S3JHYsK4f7nScLjcouxW">
+    <mxGraphModel dx="934" dy="528" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dIyf3gAe-IkWdmu3q8j6-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;" value="" vertex="1">
+          <mxGeometry height="110" width="560" x="80" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dIyf3gAe-IkWdmu3q8j6-14" edge="1" parent="1" source="dIyf3gAe-IkWdmu3q8j6-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="dIyf3gAe-IkWdmu3q8j6-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dIyf3gAe-IkWdmu3q8j6-1" parent="1" style="rounded=1;" value="Shop API&#xa;Spring Boot" vertex="1">
+          <mxGeometry height="60" width="120" x="120" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dIyf3gAe-IkWdmu3q8j6-15" edge="1" parent="1" source="dIyf3gAe-IkWdmu3q8j6-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="dIyf3gAe-IkWdmu3q8j6-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dIyf3gAe-IkWdmu3q8j6-2" parent="1" style="rounded=1;" value="CRM API&#xa;Spring Boot" vertex="1">
+          <mxGeometry height="60" width="120" x="294" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dIyf3gAe-IkWdmu3q8j6-16" edge="1" parent="1" source="dIyf3gAe-IkWdmu3q8j6-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="dIyf3gAe-IkWdmu3q8j6-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dIyf3gAe-IkWdmu3q8j6-3" parent="1" style="rounded=1;" value="MES API&#xa;C# .NET" vertex="1">
+          <mxGeometry height="60" width="120" x="470" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dIyf3gAe-IkWdmu3q8j6-17" edge="1" parent="1" source="dIyf3gAe-IkWdmu3q8j6-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="dIyf3gAe-IkWdmu3q8j6-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dIyf3gAe-IkWdmu3q8j6-4" parent="1" style="rounded=1;" value="Fluent Bit / Filebeat&#xa;log collectors" vertex="1">
+          <mxGeometry height="60" width="120" x="294" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="dIyf3gAe-IkWdmu3q8j6-22" edge="1" parent="1" source="dIyf3gAe-IkWdmu3q8j6-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="dIyf3gAe-IkWdmu3q8j6-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dIyf3gAe-IkWdmu3q8j6-5" parent="1" style="rounded=1;" value="PostgreSQL&#xa;slow query log" vertex="1">
+          <mxGeometry height="60" width="120" x="119" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="dIyf3gAe-IkWdmu3q8j6-20" edge="1" parent="1" source="dIyf3gAe-IkWdmu3q8j6-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="dIyf3gAe-IkWdmu3q8j6-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dIyf3gAe-IkWdmu3q8j6-6" parent="1" style="rounded=1;" value="RabbitMQ&#xa;server logs" vertex="1">
+          <mxGeometry height="60" width="120" x="293" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="dIyf3gAe-IkWdmu3q8j6-21" edge="1" parent="1" source="dIyf3gAe-IkWdmu3q8j6-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dIyf3gAe-IkWdmu3q8j6-7" parent="1" style="rounded=1;" value="EC2 instances&#xa;system logs " vertex="1">
+          <mxGeometry height="60" width="120" x="469" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="dIyf3gAe-IkWdmu3q8j6-23" edge="1" parent="1" source="dIyf3gAe-IkWdmu3q8j6-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="dIyf3gAe-IkWdmu3q8j6-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dIyf3gAe-IkWdmu3q8j6-8" parent="1" style="rounded=1;" value="OpenSearch / &#xa;Elasticsearch" vertex="1">
+          <mxGeometry height="60" width="120" x="293" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="dIyf3gAe-IkWdmu3q8j6-9" parent="1" style="rounded=1;" value="OpenSearch &#xa;Dashboards" vertex="1">
+          <mxGeometry height="60" width="120" x="294" y="525" as="geometry" />
+        </mxCell>
+        <mxCell id="dIyf3gAe-IkWdmu3q8j6-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="app logs" vertex="1">
+          <mxGeometry height="30" width="60" x="80" y="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

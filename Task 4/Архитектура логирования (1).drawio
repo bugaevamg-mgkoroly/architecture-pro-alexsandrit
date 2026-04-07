@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="GbmhkgA0Jv3V2q1x1vKv">
+    <mxGraphModel dx="934" dy="528" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MCyQeureo-9iDqnFIICv-9" edge="1" parent="1" source="MCyQeureo-9iDqnFIICv-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="MCyQeureo-9iDqnFIICv-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MCyQeureo-9iDqnFIICv-1" parent="1" style="rounded=1;" value="Shop API&#xa;Logback  " vertex="1">
+          <mxGeometry height="60" width="120" x="160" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MCyQeureo-9iDqnFIICv-10" edge="1" parent="1" source="MCyQeureo-9iDqnFIICv-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="MCyQeureo-9iDqnFIICv-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MCyQeureo-9iDqnFIICv-2" parent="1" style="rounded=1;" value="CRM API&#xa;Logback" vertex="1">
+          <mxGeometry height="60" width="120" x="340" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MCyQeureo-9iDqnFIICv-11" edge="1" parent="1" source="MCyQeureo-9iDqnFIICv-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="MCyQeureo-9iDqnFIICv-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MCyQeureo-9iDqnFIICv-3" parent="1" style="rounded=1;" value="MES API&#xa;Serilog " vertex="1">
+          <mxGeometry height="60" width="120" x="510" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MCyQeureo-9iDqnFIICv-13" edge="1" parent="1" source="MCyQeureo-9iDqnFIICv-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="MCyQeureo-9iDqnFIICv-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MCyQeureo-9iDqnFIICv-4" parent="1" style="rounded=1;" value="Fluent Bit&#xa;(log collector)&#xa;- parsing&#xa;- enrichment &#xa;- filtering " vertex="1">
+          <mxGeometry height="100" width="120" x="340" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="MCyQeureo-9iDqnFIICv-14" edge="1" parent="1" source="MCyQeureo-9iDqnFIICv-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="MCyQeureo-9iDqnFIICv-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MCyQeureo-9iDqnFIICv-5" parent="1" style="rounded=1;" value="OpenSearch &#xa;- indexing &#xa;- storage &#xa;- retention " vertex="1">
+          <mxGeometry height="100" width="120" x="340" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="MCyQeureo-9iDqnFIICv-6" parent="1" style="rounded=1;" value="OpenSearch Dashboards&#xa;- search  &#xa;- visualizations&#xa;- alerts   " vertex="1">
+          <mxGeometry height="100" width="160" x="320" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="MCyQeureo-9iDqnFIICv-12" edge="1" parent="1" source="MCyQeureo-9iDqnFIICv-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="MCyQeureo-9iDqnFIICv-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MCyQeureo-9iDqnFIICv-8" parent="1" style="rounded=0;align=left;" value="- PostgreSQL slow query log&#xa;- RabbitMQ server logs&#xa;- EC2 syslog&#xa;&#xa;" vertex="1">
+          <mxGeometry height="90" width="200" x="520" y="165" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
