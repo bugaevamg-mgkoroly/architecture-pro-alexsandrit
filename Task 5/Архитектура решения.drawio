@@ -1,0 +1,31 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="42Y0supWxSVrFXVLMcAO">
+    <mxGraphModel dx="934" dy="528" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QbFtN2gdi7ca_8ujK-QM-5" edge="1" parent="1" source="QbFtN2gdi7ca_8ujK-QM-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="QbFtN2gdi7ca_8ujK-QM-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QbFtN2gdi7ca_8ujK-QM-1" parent="1" style="rounded=0;" value="MES Frontend" vertex="1">
+          <mxGeometry height="60" width="120" x="200" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="QbFtN2gdi7ca_8ujK-QM-6" edge="1" parent="1" source="QbFtN2gdi7ca_8ujK-QM-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="QbFtN2gdi7ca_8ujK-QM-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QbFtN2gdi7ca_8ujK-QM-7" edge="1" parent="1" source="QbFtN2gdi7ca_8ujK-QM-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="QbFtN2gdi7ca_8ujK-QM-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QbFtN2gdi7ca_8ujK-QM-2" parent="1" style="rounded=0;whiteSpace=wrap;" value="MES API (C#)" vertex="1">
+          <mxGeometry height="60" width="120" x="200" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="QbFtN2gdi7ca_8ujK-QM-3" parent="1" style="rounded=0;" value="Redis Cache&#xa;(список заказов)" vertex="1">
+          <mxGeometry height="60" width="120" x="200" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="QbFtN2gdi7ca_8ujK-QM-4" parent="1" style="rounded=0;" value="MES Database&#xa;&#xa;PostgreSQL" vertex="1">
+          <mxGeometry height="60" width="120" x="390" y="310" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
