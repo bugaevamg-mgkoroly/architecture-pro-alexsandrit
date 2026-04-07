@@ -200,11 +200,7 @@ public async Task UpdateOrderStatus(string orderId, string newStatus)
 - TTL + Event-based инвалидация
 
 **Диаграмма:**
-```
-[MES API] ──check──> [Redis] ──miss──> [PostgreSQL]
-                        │
-                    <───hit
-```
+![alt text](<Redis Cache-Aside.png>)
 
 **Плюсы:**
 - Простота внедрения
@@ -223,13 +219,6 @@ public async Task UpdateOrderStatus(string orderId, string newStatus)
 - Materialized view для списка заказов по статусам
 - Периодический REFRESH (каждые 30 сек)
 - Без дополнительной инфраструктуры
-
-**Диаграмма:**
-```
-[MES API] ──────> [Materialized View] <──refresh── [Scheduler]
-                         │
-                   [PostgreSQL]
-```
 
 **Плюсы:**
 - Нет дополнительной инфраструктуры
