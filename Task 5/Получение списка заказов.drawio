@@ -1,0 +1,76 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="RacFM5T1DfJLbL79IRhP">
+    <mxGraphModel dx="934" dy="528" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CQONyGuNw0MDS4OseBfG-1" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="MES&lt;div&gt;frontend&lt;/div&gt;" vertex="1">
+          <mxGeometry height="440" width="100" x="80" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CQONyGuNw0MDS4OseBfG-2" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="MES API" vertex="1">
+          <mxGeometry height="440" width="100" x="240" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CQONyGuNw0MDS4OseBfG-3" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Redis&lt;div&gt;Cache&lt;/div&gt;" vertex="1">
+          <mxGeometry height="440" width="100" x="400" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CQONyGuNw0MDS4OseBfG-7" parent="CQONyGuNw0MDS4OseBfG-3" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Cache hit?" vertex="1">
+          <mxGeometry height="50" width="10" x="45" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="CQONyGuNw0MDS4OseBfG-4" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="MES DB" vertex="1">
+          <mxGeometry height="440" width="100" x="560" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CQONyGuNw0MDS4OseBfG-5" edge="1" parent="1" style="verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" value=" 1. GET /orders?status=NEW&amp;page=1 ">
+          <mxGeometry relative="1" width="60" as="geometry">
+            <mxPoint x="130" y="120" as="sourcePoint" />
+            <mxPoint x="289.5" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CQONyGuNw0MDS4OseBfG-6" edge="1" parent="1" style="verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" value="2. GET orders:NEW:page1">
+          <mxGeometry relative="1" width="60" as="geometry">
+            <mxPoint x="290" y="160" as="sourcePoint" />
+            <mxPoint x="449.5" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CQONyGuNw0MDS4OseBfG-8" edge="1" parent="1" style="verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" value="3a. [HIT] Return cached data ">
+          <mxGeometry relative="1" width="60" as="geometry">
+            <mxPoint x="449.5" y="240" as="sourcePoint" />
+            <mxPoint x="289.5" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CQONyGuNw0MDS4OseBfG-9" edge="1" parent="1" style="verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" value="3b. [MISS] null ">
+          <mxGeometry relative="1" width="60" as="geometry">
+            <mxPoint x="450" y="299" as="sourcePoint" />
+            <mxPoint x="290" y="299" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CQONyGuNw0MDS4OseBfG-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="OR" vertex="1">
+          <mxGeometry height="10" width="60" x="340" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="CQONyGuNw0MDS4OseBfG-11" edge="1" parent="1" style="verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" target="CQONyGuNw0MDS4OseBfG-4" value="4. SELECT * FROM  orders WHERE status=&#39;NEW&#39; LIMIT 20 ">
+          <mxGeometry relative="1" width="60" as="geometry">
+            <mxPoint x="290" y="360" as="sourcePoint" />
+            <mxPoint x="350" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CQONyGuNw0MDS4OseBfG-12" edge="1" parent="1" style="verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" target="CQONyGuNw0MDS4OseBfG-2" value="5. Return orders">
+          <mxGeometry relative="1" width="60" as="geometry">
+            <mxPoint x="610" y="400" as="sourcePoint" />
+            <mxPoint x="670" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CQONyGuNw0MDS4OseBfG-13" edge="1" parent="1" style="verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" target="CQONyGuNw0MDS4OseBfG-3" value="6. SET orders:NEW:page1 TTL 60s ">
+          <mxGeometry relative="1" width="60" as="geometry">
+            <mxPoint x="290" y="440" as="sourcePoint" />
+            <mxPoint x="350" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CQONyGuNw0MDS4OseBfG-14" edge="1" parent="1" style="verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" value=" 7. Return orders ">
+          <mxGeometry relative="1" width="60" as="geometry">
+            <mxPoint x="290" y="470" as="sourcePoint" />
+            <mxPoint x="130" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

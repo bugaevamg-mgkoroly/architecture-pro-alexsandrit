@@ -1,0 +1,59 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="8fTQnpx_Hu3-OP3J7tdY">
+    <mxGraphModel dx="934" dy="528" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="1ZjbSj4tDo7HE14iQczq-15" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="MES&lt;div&gt;frontend&lt;/div&gt;" vertex="1">
+          <mxGeometry height="320" width="100" x="80" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="1ZjbSj4tDo7HE14iQczq-16" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="MES API" vertex="1">
+          <mxGeometry height="320" width="100" x="240" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="1ZjbSj4tDo7HE14iQczq-17" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Redis&lt;div&gt;Cache&lt;/div&gt;" vertex="1">
+          <mxGeometry height="320" width="100" x="400" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="1ZjbSj4tDo7HE14iQczq-19" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="MES DB" vertex="1">
+          <mxGeometry height="320" width="100" x="560" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="1ZjbSj4tDo7HE14iQczq-20" edge="1" parent="1" style="verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" target="1ZjbSj4tDo7HE14iQczq-16" value="1. PUT /orders/ORD-123/status{status:&quot;IN_PROGRESS&quot;}">
+          <mxGeometry relative="1" width="60" as="geometry">
+            <mxPoint x="130" y="280" as="sourcePoint" />
+            <mxPoint x="190" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1ZjbSj4tDo7HE14iQczq-21" edge="1" parent="1" style="verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" target="1ZjbSj4tDo7HE14iQczq-19" value="2. UPDATE orders SET status= &#39;IN_PROGRESS&#39; WHERE id=&#39;ORD-123&#39; ">
+          <mxGeometry relative="1" width="60" as="geometry">
+            <mxPoint x="290" y="320" as="sourcePoint" />
+            <mxPoint x="450" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1ZjbSj4tDo7HE14iQczq-22" edge="1" parent="1" style="verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" value=" 3. OK (1 row) ">
+          <mxGeometry relative="1" width="60" as="geometry">
+            <mxPoint x="610" y="360" as="sourcePoint" />
+            <mxPoint x="290" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1ZjbSj4tDo7HE14iQczq-23" edge="1" parent="1" style="verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" target="1ZjbSj4tDo7HE14iQczq-17" value="4. DEL orders:*(invalidate pattern) ">
+          <mxGeometry relative="1" width="60" as="geometry">
+            <mxPoint x="290" y="400" as="sourcePoint" />
+            <mxPoint x="350" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1ZjbSj4tDo7HE14iQczq-24" edge="1" parent="1" style="verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" value=" 5. OK  ">
+          <mxGeometry relative="1" width="60" as="geometry">
+            <mxPoint x="450" y="440" as="sourcePoint" />
+            <mxPoint x="290" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1ZjbSj4tDo7HE14iQczq-25" edge="1" parent="1" style="verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" value="  6. 200 OK  ">
+          <mxGeometry relative="1" width="60" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="290" y="480" as="sourcePoint" />
+            <mxPoint x="130" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
